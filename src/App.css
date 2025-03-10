@@ -641,20 +641,6 @@ header {
   font-weight: 400;
 }
 
-.header2 {
-  position: relative;
-  top: 5rem;
-  overflow: hidden;
-  height: 50vh;
-  margin-bottom: 5rem;
-  padding: 2rem 0 2rem 0;
-  /* background-color: var(--color-bg1); */
-  background-image: url(../images/headerall.png);
-  background-repeat: no-repeat;
-  display: grid;
-  align-items: center;
-}
-
 /* ============  End Displaying card  ================== */
 .two__column {
   display: grid;

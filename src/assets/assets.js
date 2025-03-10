@@ -21,6 +21,7 @@ import boozlecover from "../assets/boozlecover.jpg";
 import signaturedp from "../assets/signaturedp.png";
 import ProfootBallVersedp from "../assets/ProfootBallVersedp.png";
 import Kanbanboard from "../assets/Kanbanboard.png";
+import headerall from "../assets/headerall.png";
 
 export const assets = {
   illustrate3,
@@ -46,4 +47,5 @@ export const assets = {
   signaturedp,
   ProfootBallVersedp,
   Kanbanboard,
+  headerall,
 };

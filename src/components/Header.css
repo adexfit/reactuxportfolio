@@ -1,0 +1,13 @@
+.header2 {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 50vh;
+  margin-bottom: 5rem;
+  padding: 2rem 0 2rem 0;
+  /* background-color: var(--color-bg1); */
+  background-image: url(../assets/headerall.png);
+  background-repeat: no-repeat;
+  display: grid;
+  align-items: center;
+}
