@@ -12,12 +12,13 @@ import Home from "./pages/Home/Home";
 import Layout from "./pages/Layout";
 import { useEffect, useRef } from "react";
 import { AppScrollProvider } from "./contexts/AppScrollContext";
+import Contact from "./pages/Contacts/Contact";
 
 function App() {
   useEffect(() => {
     window.addEventListener("scroll", function () {
       const navbar = document.querySelector(".navbar");
-      if (window.scrollY > 50) {
+      if (window.scrollY > 30) {
         navbar.classList.add("scrolled");
       } else {
         navbar.classList.remove("scrolled");
@@ -38,6 +39,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/profootballverse" element={<Profootballverse />} />
               <Route path="/egolending" element={<Egolending />} />
               <Route path="/pleasurate" element={<Pleasurate />} />

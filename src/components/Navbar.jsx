@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Navigation Links Column */}
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li onClick={closeMenu}>
-            <a href="#home" onClick={scrollToTop}>
+            <a href="/" onClick={scrollToTop}>
               Home
             </a>
           </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <a href="#contact" onClick={closeMenu}>
+            <a href="/contact" onClick={closeMenu}>
               Contact
             </a>
           </li>

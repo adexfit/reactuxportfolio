@@ -1,15 +1,15 @@
 import React, { useRef, useContext } from "react";
 import "./contact.css";
 import { assets } from "../../assets/assets";
-import AppScrollContext from "../../contexts/AppScrollContext";
+// import AppScrollContext from "../../contexts/AppScrollContext";
 
 const Contact = () => {
-  const { scrollToContact, scrollToDivRef } = useContext(AppScrollContext);
+  // const { scrollToContact, scrollToDivRef } = useContext(AppScrollContext);
   return (
     <section
       className="contact"
       id="contact"
-      ref={scrollToDivRef}
+      // ref={scrollToDivRef}
       data-aos="fade-up"
       data-aos-duration="3000"
       data-aos-once="true"
