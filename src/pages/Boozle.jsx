@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import OtherProjects from "../components/OtherProjects";
+import { assets } from "../assets/assets";
 
 const Boozle = () => {
   return (
@@ -37,7 +38,7 @@ const Boozle = () => {
             <ul className="images">
               <li className="img">
                 <img
-                  src="./images/boozle/boozle_home.png"
+                  src={assets.boozle_home}
                   height="450px"
                   width="auto"
                   alt="home page picture"
@@ -64,10 +65,7 @@ const Boozle = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img
-                  src="./images/designprocess.png"
-                  alt="design process image"
-                />
+                <img src={assets.designprocess} alt="design process image" />
               </li>
             </ul>
           </div>
@@ -80,13 +78,13 @@ const Boozle = () => {
             <ul className="images">
               <li className="img">
                 <img
-                  src="./images/boozle/boozle_problem_statement.png"
+                  src={assets.boozle_problem_statement}
                   alt="problem statement image"
                 />
               </li>
               <li className="img">
                 <img
-                  src="./images/boozle/boozle_goal_statement.png"
+                  src={assets.boozle_goal_statement}
                   alt="goal statement image"
                 />
               </li>
@@ -124,10 +122,7 @@ const Boozle = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img
-                  src="./images/boozle/boozle_persona.jpg"
-                  alt="Persona img"
-                />
+                <img src={assets.boozle_persona} alt="Persona img" />
               </li>
             </ul>
             <figcaption>Persona</figcaption>
@@ -154,10 +149,7 @@ const Boozle = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img
-                  src="./images/boozle/ai_boozle.png"
-                  alt="Information architecture"
-                />
+                <img src={assets.ai_boozle} alt="Information architecture" />
               </li>
             </ul>
             <figcaption>Information architecture</figcaption>
@@ -168,10 +160,7 @@ const Boozle = () => {
             <div className="image__column">
               <ul className="images">
                 <li className="img">
-                  <img
-                    src="./images/boozle/userflowprofile.png"
-                    alt="user flow"
-                  />
+                  <img src={assets.userflowprofile} alt="user flow" />
                 </li>
               </ul>
               <figcaption>user flow for editing profile</figcaption>
@@ -180,10 +169,7 @@ const Boozle = () => {
             <div className="image__column">
               <ul className="images">
                 <li className="img">
-                  <img
-                    src="./images/boozle/userflowdiscussion.png"
-                    alt="user flow img"
-                  />
+                  <img src={assets.userflowdiscussion} alt="user flow img" />
                 </li>
               </ul>
               <figcaption>User flow for discussions</figcaption>
@@ -198,14 +184,14 @@ const Boozle = () => {
             <ul className="images">
               <li className="img">
                 <img
-                  src="./images/boozle/paper1boo.jpg"
+                  src={assets.paper1boo}
                   height="300px"
                   width="auto"
                   id="img_special"
                   alt="paper wireframe 1"
                 />
                 <img
-                  src="./images/boozle/paper2boo.jpg"
+                  src={assets.paper2boo}
                   height="300px"
                   width="auto"
                   id="img_special"
@@ -235,12 +221,12 @@ const Boozle = () => {
             <ul className="images">
               <li className="img">
                 <img
-                  src="./images/boozle/digital1boo.png"
+                  src={assets.digital1boo}
                   id="img_special"
                   alt="digital wireframe 1"
                 />
                 <img
-                  src="./images/boozle/digital2boo.png"
+                  src={assets.digital2boo}
                   id="img_special"
                   alt="digital wireframe 2"
                 />
@@ -270,13 +256,9 @@ const Boozle = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
+                <img src={assets.mock1} alt="Mockups" id="img_special" />
                 <img
-                  src="./images/boozle/mock1.png"
-                  alt="Mockups"
-                  id="img_special"
-                />
-                <img
-                  src="./images/boozle/mock2.png"
+                  src={assets.digital2boo}
                   alt="high fidelity wireframe"
                   id="img_special"
                 />
@@ -291,12 +273,12 @@ const Boozle = () => {
             <ul className="images">
               <li className="img">
                 <img
-                  src="./images/boozle/mock3.png"
+                  src={assets.mock3}
                   alt="high fidelity wireframe"
                   id="img_special"
                 />
                 <img
-                  src="./images/boozle/mock4.png"
+                  src={assets.mock4}
                   alt="high fidelity wireframe"
                   id="img_special"
                 />
@@ -308,12 +290,12 @@ const Boozle = () => {
             <ul className="images">
               <li className="img">
                 <img
-                  src="./images/boozle/mock5.png"
+                  src={assets.mock5}
                   alt="high fidelity wireframe"
                   id="img_special"
                 />
                 <img
-                  src="./images/boozle/mock6.png"
+                  src={assets.mock6}
                   alt="high fidelity wireframe"
                   id="img_special"
                 />

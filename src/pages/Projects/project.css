@@ -40,6 +40,10 @@
   grid-template-columns: 1fr;
 }
 
+li img {
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 480px) {
   .portfolio__container {
     display: grid;

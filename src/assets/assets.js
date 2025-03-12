@@ -59,6 +59,28 @@ import wireframe from "../assets/Pleasurate/wireframe.png";
 import pleasurate_low_proto from "../assets/Pleasurate/pleasurate_low_proto.gif";
 import pleasurate_hd_proto from "../assets/Pleasurate/pleasurate_hd_proto.gif";
 
+// Boozle project pictures
+import boozle_home from "../assets/Boozle/boozle_home.png";
+// import designprocess from "../assets/Boozle/designprocess.png";
+import boozle_problem_statement from "../assets/Boozle/boozle_problem_statement.png";
+import boozle_goal_statement from "../assets/Boozle/boozle_goal_statement.png";
+import boozle_persona from "../assets/Boozle/boozle_persona.jpg";
+import ai_boozle from "../assets/Boozle/ai_boozle.png";
+import userflowprofile from "../assets/Boozle/userflowprofile.png";
+import userflowdiscussion from "../assets/Boozle/userflowdiscussion.png";
+import paper1boo from "../assets/Boozle/paper1boo.jpg";
+import paper2boo from "../assets/Boozle/paper2boo.jpg";
+import digital1boo from "../assets/Boozle/digital1boo.png";
+import digital2boo from "../assets/Boozle/digital2boo.png";
+import mock1 from "../assets/Boozle/mock1.png";
+import mock3 from "../assets/Boozle/mock3.png";
+import mock4 from "../assets/Boozle/mock4.png";
+import mock5 from "../assets/Boozle/mock5.png";
+import mock6 from "../assets/Boozle/mock6.png";
+
+// ProFootball project pictures
+import UXDesign from "../assets/profootball/UXDesign.jpg";
+
 export const assets = {
   illustrate3,
   react,
@@ -115,4 +137,21 @@ export const assets = {
   wireframe,
   pleasurate_low_proto,
   pleasurate_hd_proto,
+  boozle_home,
+  boozle_problem_statement,
+  boozle_goal_statement,
+  boozle_persona,
+  ai_boozle,
+  userflowprofile,
+  userflowdiscussion,
+  paper1boo,
+  paper2boo,
+  digital1boo,
+  digital2boo,
+  mock1,
+  mock3,
+  mock4,
+  mock5,
+  mock6,
+  UXDesign,
 };
