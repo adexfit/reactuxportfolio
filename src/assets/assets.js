@@ -78,8 +78,16 @@ import mock4 from "../assets/Boozle/mock4.png";
 import mock5 from "../assets/Boozle/mock5.png";
 import mock6 from "../assets/Boozle/mock6.png";
 
+// Kanban board images
+import wirekanban from "../assets/kanban/wirekanban.png";
+import emptyDashboard from "../assets/kanban/emptyDashboard.png";
+import finalkanban from "../assets/kanban/finalkanban.png";
+import deleteColumn from "../assets/kanban/deleteColumn.png";
+import newkanban from "../assets/kanban/newkanban.png";
+
 // ProFootball project pictures
 import UXDesign from "../assets/profootball/UXDesign.jpg";
+import match from "../assets/profootball/match.png";
 
 export const assets = {
   illustrate3,
@@ -154,4 +162,10 @@ export const assets = {
   mock5,
   mock6,
   UXDesign,
+  wirekanban,
+  emptyDashboard,
+  finalkanban,
+  deleteColumn,
+  newkanban,
+  match,
 };
