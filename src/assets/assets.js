@@ -21,7 +21,7 @@ import egolendingdp from "../assets/egolendingdp.jpg";
 import pleasuratehd from "../assets/pleasuratehd.png";
 import boozlecover from "../assets/boozlecover.jpg";
 import signaturedp from "../assets/signaturedp.png";
-import ProfootBallVersedp from "../assets/ProfootBallVersedp.png";
+import profootballversedp from "../assets/profootballversedp.png";
 import Kanbanboard from "../assets/Kanbanboard.png";
 import headerall from "../assets/headerall.png";
 
@@ -116,7 +116,7 @@ export const assets = {
   pleasuratehd,
   boozlecover,
   signaturedp,
-  ProfootBallVersedp,
+  profootballversedp,
   Kanbanboard,
   headerall,
   designprocess,

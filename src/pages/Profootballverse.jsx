@@ -33,7 +33,7 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.ProfootBallVersedp} alt="home page picture" />
+                <img src={assets.profootballversedp} alt="home page picture" />
               </li>
             </ul>
             <figcaption></figcaption>
