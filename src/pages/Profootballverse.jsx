@@ -227,7 +227,7 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.match} alt="football img" />
+                <img src={assets.Match} alt="football img" />
               </li>
             </ul>
             <figcaption>Hi fidelity design</figcaption>
