@@ -197,10 +197,10 @@ const Profootballverse = () => {
             </ul>
             <ul className="images">
               <li className="img">
-                <img src={assets.ego_user_journey} alt="user journey img" />
+                <img src={assets.wirefootball} alt="wireframe img" />
               </li>
             </ul>
-            <figcaption>User Journey Map</figcaption>
+            <figcaption>Wireframe</figcaption>
           </div>
         </div>
       </section>
@@ -227,10 +227,7 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img
-                  src={assets.match}
-                  alt="borrower information achitecture img"
-                />
+                <img src={assets.match} alt="football img" />
               </li>
             </ul>
             <figcaption>Hi fidelity design</figcaption>
@@ -274,60 +271,55 @@ const Profootballverse = () => {
                 Tab navigation was implemented for mobile screens for easy
                 navigation.
               </li>
+            </ul>{" "}
+            <br />
+            <h2 className="colored_heading">Final UI Design:</h2>
+            <h5>Key Features</h5>
+            <ul className="list">
+              <li>Real-time discussion forums with match-specific threads.</li>
+              <li>Trending football news with personalized content.</li>
+              <li>Interactive quizzes with leaderboards and rewards.</li>
+              <li>User profiles with team preferences and achievements.</li>
+              <li>Dark mode toggle for better accessibility.</li>
+              <li>Mobile-friendly design for an optimal experience.</li>
             </ul>
-          </div>
-          <div className="text__column">
-            <h2 className="colored_heading">Wireframe</h2>
-            <p>
-              One of the key design decisions I made during this phase was to
-              create a dashboard for borrowers and lenders. Also, instead of
-              joining the features of the two dashboards, I separated them like
-              we have on Fiverr (for buyers and sellers). This helps the users
-              to focus on the part of the app that is important to them, thereby
-              reducing cognition load.
-            </p>
           </div>
         </div>
       </section>
 
       <section className="light__background">
         <div className="container two__column">
-          <div className="text__column">
-            <h2 className="colored_heading">Design</h2>
-            <p>
-              With the wireframes finalized, I began the visual design phase of
-              the project. I created a style guide that outlined the app's color
-              scheme, typography, and iconography. I also created high-fidelity
-              mockups of the app, incorporating my visual design choices into
-              the wireframes.
-            </p>
-            <p>
-              One of the key challenges I faced during this phase was creating a
-              design that was both visually appealing and functional. I wanted
-              the app to be easy on the eyes, but also easy to navigate. To
-              achieve this, we used a simple color palette and clean typography,
-              while also incorporating intuitive iconography and clear calls to
-              action.
-            </p>
-          </div>
-
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.egogifhd} alt="high fidelity wireframe" />
+                <img
+                  src={assets.profootballtable}
+                  alt="high fidelity wireframe"
+                />
               </li>
             </ul>
-            <figcaption>high-fidelity prototype</figcaption>
+            <figcaption>high-fidelity design</figcaption>
+          </div>
+          <div className="image__column">
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.profootballchat}
+                  alt="high fidelity wireframe"
+                />
+              </li>
+            </ul>
+            <figcaption>high-fidelity design</figcaption>
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="light__background">
         <div className="container two__column">
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.egomobile2} alt="high fidelity wireframe" />
+                <img src={assets.mobilechat} alt="high fidelity wireframe" />
               </li>
             </ul>
             <figcaption>mobile app</figcaption>
@@ -336,7 +328,11 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.egomock2} alt="high fidelity wireframe" />
+                <img
+                  src={assets.mobileHome}
+                  alt="high fidelity wireframe"
+                  height={563}
+                />
               </li>
             </ul>
             <figcaption>mobile app</figcaption>
@@ -344,33 +340,6 @@ const Profootballverse = () => {
         </div>
       </section>
 
-      <section className="light__background">
-        <div className="container two__column">
-          <div className="text__column">
-            <h2 className="colored_heading">User testing</h2>
-            <p>
-              After completing the design, I conducted user testing to ensure
-              that the application was easy to use and met the needs of our
-              target audience. I recruited participants who fit our target
-              demographic and asked them to perform various tasks using the
-              application. Based on their feedback, I made several adjustments
-              to the design to improve usability.
-            </p>
-          </div>
-          <div className="text__column">
-            <h2 className="colored_heading">Conclusion</h2>
-            <p>
-              By conducting extensive user research, developing intuitive
-              information architecture, creating wireframes and visual designs,
-              and conducting user testing, I was able to create an app that is
-              both functional and visually appealing. I believe that this app
-              has the potential to revolutionize the way borrowers and lenders
-              connect, making peer-to-peer lending more accessible and
-              convenient than ever before.
-            </p>
-          </div>
-        </div>
-      </section>
       <OtherProjects title="ProfootBallVerse" />
     </div>
   );

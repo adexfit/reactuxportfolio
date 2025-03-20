@@ -88,6 +88,11 @@ import newkanban from "../assets/kanban/newkanban.png";
 // ProFootball project pictures
 import UXDesign from "../assets/profootball/UXDesign.jpg";
 import match from "../assets/profootball/match.png";
+import profootballchat from "../assets/profootball/profootballchat.png";
+import profootballtable from "../assets/profootball/profootballtable.png";
+import mobilechat from "../assets/profootball/mobilechat.png";
+import mobileHome from "../assets/profootball/mobileHome.png";
+import wirefootball from "../assets/profootball/wirefootball.png";
 
 export const assets = {
   illustrate3,
@@ -168,4 +173,9 @@ export const assets = {
   deleteColumn,
   newkanban,
   match,
+  profootballchat,
+  profootballtable,
+  mobilechat,
+  mobileHome,
+  wirefootball,
 };
