@@ -31,7 +31,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo Column */}
-        <div className="logo">Elisha</div>
+        <div className="logo">
+          <a href="/">Elisha</a>
+        </div>
 
         {/* Mobile Menu Toggle */}
         <div className="menu-toggle" onClick={toggleMenu}>

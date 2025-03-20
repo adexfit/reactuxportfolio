@@ -280,7 +280,7 @@ const Profootballverse = () => {
               <li>Trending football news with personalized content.</li>
               <li>Interactive quizzes with leaderboards and rewards.</li>
               <li>User profiles with team preferences and achievements.</li>
-              <li>Dark mode toggle for better accessibility.</li>
+
               <li>Mobile-friendly design for an optimal experience.</li>
             </ul>
           </div>
@@ -314,7 +314,7 @@ const Profootballverse = () => {
         </div>
       </section>
 
-      <section className="light__background">
+      <section>
         <div className="container two__column">
           <div className="image__column">
             <ul className="images">
@@ -336,6 +336,53 @@ const Profootballverse = () => {
               </li>
             </ul>
             <figcaption>mobile app</figcaption>
+          </div>
+        </div>
+      </section>
+      <section className="light__background">
+        <div className="container two__column">
+          <div className="text__column">
+            <h2 className="colored_heading">Outcome & Impact</h2>
+            <h5>Usability Test Goals:</h5>
+            <ul className="list">
+              <li>
+                Increased engagement by 60% during live matches (based on user
+                testing).
+              </li>
+              <li>
+                Enhanced retention through personalized news and interactive
+                content.
+              </li>
+              <li>
+                Positive feedback from early users on ease of use and
+                navigation.
+              </li>
+            </ul>
+            <br />
+            <h5>Lessons Learned & Next Steps</h5>
+            <ul className="list">
+              <li>
+                Balancing content and engagement is crucial for community
+                platforms.
+              </li>
+              <li>
+                Real-time interaction features need scalability for peak traffic
+                times.
+              </li>
+              <li>
+                User customization (team-based news, quiz categories) boosts
+                retention.
+              </li>
+            </ul>
+          </div>
+          <div className="text__column">
+            <h2 className="colored_heading">Next Steps:</h2>
+            <ul className="list">
+              <li>Implement AI-driven content recommendations.</li>
+              <li>Introduce live match prediction challenges.</li>
+              <li>Expand social sharing features for wider reach.</li>
+            </ul>{" "}
+            <br />
           </div>
         </div>
       </section>

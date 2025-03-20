@@ -63,14 +63,7 @@ export const projectList = [
     netlify: "",
     hosted: false,
   },
-  {
-    title: "Filez",
-    desc: "A file management application that simplifies file organization and retrieval for big companies",
-    imgSrc: `${assets.signaturedp}`,
-    pageLink: "/filez",
-    netlify: "https://adex-react-calculator.netlify.app/",
-    hosted: true,
-  },
+
   {
     title: "Kanban Board",
     desc: "A simple Kanban board App which helps companies to manage their teams",
@@ -81,45 +74,11 @@ export const projectList = [
   },
 ];
 
-// export const projectList = [
-//   {
-//     title: "Trivia App",
-//     desc: "A nice react trivia game that awards money for questions answered.",
-//     imgSrc: `${assets.trivia}`,
-//     github: "https://github.com/adexfit/react-note-app/tree/main",
-//     netlify: "https://adex-react-quiz.netlify.app/",
-//     hosted: true,
-//   },
-//   {
-//     title: "Ticket",
-//     desc: "A responsive ticket generator designed using react js",
-//     imgSrc: `${assets.ticketshot}`,
-//     github: "https://github.com/adexfit/TickectGenerator",
-//     netlify: "https://adexticketgen.netlify.app/",
-//     hosted: true,
-//   },
-//   {
-//     title: "React Note App",
-//     desc: "A react note app with all the CRUD fuctionalities. This app makes an API call to a JSON server which mimics the backend",
-//     imgSrc: `${assets.noteapp}`,
-//     github: "https://github.com/adexfit/react-note-app",
-//     netlify: "",
-//     hosted: false,
-//   },
-//   {
-//     title: "React Calculator",
-//     desc: "A react Calculator with all necessary functionalities",
-//     imgSrc: `${assets.calculator}`,
-//     github: "https://github.com/adexfit/reactCalculator",
-//     netlify: "https://adex-react-calculator.netlify.app/",
-//     hosted: true,
-//   },
-//   {
-//     title: "Color Game",
-//     desc: "A react color game that allows you to test your vision",
-//     imgSrc: `${assets.colorcoverpic}`,
-//     github: "https://github.com/adexfit/colorGame",
-//     netlify: "https://adexfitcolorgame.netlify.app/",
-//     hosted: true,
-//   },
-// ];
+// {
+//   title: "Filez",
+//   desc: "A file management application that simplifies file organization and retrieval for big companies",
+//   imgSrc: `${assets.signaturedp}`,
+//   pageLink: "/filez",
+//   netlify: "https://adex-react-calculator.netlify.app/",
+//   hosted: true,
+// },
