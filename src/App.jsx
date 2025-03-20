@@ -44,7 +44,7 @@ function App() {
               <Route path="/egolending" element={<Egolending />} />
               <Route path="/pleasurate" element={<Pleasurate />} />
               <Route path="/boozle" element={<Boozle />} />
-              <Route path="/filez" element={<Filez />} />
+              {/* <Route path="/filez" element={<Filez />} /> */}
               <Route path="/KanbanBoard" element={<KanbanBoard />} />
               <Route path="*" element={<NotFound />} />
             </Route>
