@@ -14,7 +14,7 @@ import ticketshot from "../assets/ticketshot.png";
 import colorcoverpic from "../assets/colorcoverpic.png";
 import close from "../assets/close.svg";
 import contact from "../assets/contact.svg";
-import AdeboyeElishaFrontendResume05 from "../assets/AdeboyeElishaFrontendResume05.pdf";
+import Adeboyeelishacv from "../assets/Adeboyeelishacv.pdf";
 
 // The home page project pictures
 import egolendingdp from "../assets/egolendingdp.jpg";
@@ -111,7 +111,7 @@ export const assets = {
   colorcoverpic,
   close,
   contact,
-  AdeboyeElishaFrontendResume05,
+  Adeboyeelishacv,
   egolendingdp,
   pleasuratehd,
   boozlecover,
