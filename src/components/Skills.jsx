@@ -1,6 +1,7 @@
 import React from "react";
 import { mySkills } from "../data/data";
 import "../components/skill.css";
+import { assets } from "../assets/assets";
 
 const Skills = () => {
   return (
@@ -13,6 +14,11 @@ const Skills = () => {
             <p>{skill.name}</p>
           </div>
         ))}
+      </div>
+
+      <div className="certification">
+        <h3>Google UX Certification</h3>
+        <img src={assets.adexgoogle} alt="Google certification" />
       </div>
     </section>
   );

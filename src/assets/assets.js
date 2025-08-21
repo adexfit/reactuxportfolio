@@ -94,6 +94,14 @@ import mobilechat from "../assets/profootball/mobilechat.png";
 import mobileHome from "../assets/profootball/mobileHome.png";
 import wirefootball from "../assets/profootball/wirefootball.png";
 
+import adexgoogle from "../assets/adexgoogle.png";
+
+//frontend projects
+import twiclone from "../assets/twiclone.png";
+import minicommerce from "../assets/minicommerce.png";
+import taskmanager from "../assets/taskmanager.png";
+import adexai from "../assets/adexai.png";
+
 export const assets = {
   illustrate3,
   react,
@@ -178,4 +186,9 @@ export const assets = {
   mobilechat,
   mobileHome,
   wirefootball,
+  twiclone,
+  minicommerce,
+  taskmanager,
+  adexai,
+  adexgoogle,
 };
