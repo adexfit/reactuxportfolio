@@ -17,8 +17,26 @@ const Skills = () => {
       </div>
 
       <div className="certification">
-        <h3>Google UX Certification</h3>
-        <img src={assets.adexgoogle} alt="Google certification" />
+        <h3>Certifications</h3>
+        <div className="container skills__container">
+          <div className="skill__card">
+            <img
+              src={assets.googleico}
+              alt="certificate"
+              style={{ width: "30px", height: "30px" }}
+            />
+            <p>Google UX certification</p>
+          </div>
+          <div className="skill__card">
+            <img
+              src={assets.freecode}
+              alt="certificate"
+              style={{ width: "30px", height: "30px" }}
+            />
+            <p>FreeCodeCamp resposive webdesign</p>
+          </div>
+        </div>
+        {/* <img src={assets.adexgoogle} alt="Google certification" /> */}
       </div>
     </section>
   );

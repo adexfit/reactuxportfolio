@@ -11,7 +11,7 @@ const Project = () => {
   const { scrollToContact, scrollToDivRef, scrollToProject, scrollToProjRef } =
     useContext(AppScrollContext);
 
-  const tabs = ["uiux", "graphics", "frontend"];
+  const tabs = ["uiux", "frontend"];   //"graphics"
   const [activeTab, setActiveTab] = useState("uiux"); //tabs[0]
   return (
     <section className="portfolio" ref={scrollToProjRef}>

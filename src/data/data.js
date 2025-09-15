@@ -34,7 +34,7 @@ export const projectList = [
   {
     title: "Egolending",
     desc: "A P2P lending platform where users can get quick no-collateral loans.",
-    imgSrc: `${assets.egolendingdp}`,
+    imgSrc: `${assets.egogifhd}`,
     pageLink: "/egolending",
     netlify: "https://adex-react-quiz.netlify.app/",
     hosted: true,

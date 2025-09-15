@@ -58,6 +58,7 @@ import ai from "../assets/Pleasurate/ai.png";
 import wireframe from "../assets/Pleasurate/wireframe.png";
 import pleasurate_low_proto from "../assets/Pleasurate/pleasurate_low_proto.gif";
 import pleasurate_hd_proto from "../assets/Pleasurate/pleasurate_hd_proto.gif";
+import googleico from "../assets/googleico.png";
 
 // Boozle project pictures
 import boozle_home from "../assets/Boozle/boozle_home.png";
@@ -101,6 +102,7 @@ import twiclone from "../assets/twiclone.png";
 import minicommerce from "../assets/minicommerce.png";
 import taskmanager from "../assets/taskmanager.png";
 import adexai from "../assets/adexai.png";
+import freecode from "../assets/freecode.png";
 
 export const assets = {
   illustrate3,
@@ -191,4 +193,6 @@ export const assets = {
   taskmanager,
   adexai,
   adexgoogle,
+  googleico,
+  freecode,
 };
