@@ -94,6 +94,7 @@ import profootballtable from "../assets/profootball/profootballtable.png";
 import mobilechat from "../assets/profootball/mobilechat.png";
 import mobileHome from "../assets/profootball/mobileHome.png";
 import wirefootball from "../assets/profootball/wirefootball.png";
+import profootballgif from "../assets/profootball/profootballgif.gif";
 
 import adexgoogle from "../assets/adexgoogle.png";
 
@@ -185,6 +186,7 @@ export const assets = {
   Match,
   profootballchat,
   profootballtable,
+  profootballgif,
   mobilechat,
   mobileHome,
   wirefootball,
