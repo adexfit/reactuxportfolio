@@ -113,6 +113,7 @@ import edubilling from "../assets/edutech/edubilling.png";
 import edurequest from "../assets/edutech/edurequest.png";
 import edustaff from "../assets/edutech/edustaff.png";
 import edudashframe from "../assets/edutech/edudashframe.png";
+import eduwire2 from "../assets/edutech/eduwire2.png";
 
 export const assets = {
   illustrate3,
@@ -212,4 +213,6 @@ export const assets = {
   edubilling,
   edurequest,
   edustaff,
+  edudashframe,
+  eduwire2,
 };

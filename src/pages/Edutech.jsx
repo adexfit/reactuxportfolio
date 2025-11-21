@@ -176,10 +176,7 @@ const EduTech = () => {
               Other IA choices included:
               <ul className="list">
                 <li>Role-based permissions</li>
-                <li>
-                  Modular navigation grouped by tasks (Students, Teachers,
-                  Classes, Reports)
-                </li>
+                <li>Modular navigation grouped by tasks</li>
                 <li>Global search for quick access to records</li>
                 <li>Notification center for reminders and announcements</li>
               </ul>
@@ -216,25 +213,25 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.Match} alt="football img" />
+                <img src={assets.edudashframe} alt="low fi wireframe" />
               </li>
             </ul>
-            <figcaption>low fidelity wireframe</figcaption>
+            <figcaption> wireframe</figcaption>
           </div>
 
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.Match} alt="football img" />
+                <img src={assets.eduwire2} alt="low fi wireframe" />
               </li>
             </ul>
-            <figcaption>Mid fidelity wireframe</figcaption>
+            <figcaption>wireframe</figcaption>
           </div>
         </div>
       </section>
 
       <section className="">
-        <div className="container two__column">
+        <div className="container">
           <div className="text__column">
             <h3 className="colored_heading">Workflow Optimization</h3>
             <p>
@@ -253,7 +250,6 @@ const EduTech = () => {
               in real environments.
             </p>
           </div>
-          <div className="text__column"></div>
         </div>
       </section>
 
@@ -304,7 +300,7 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.eduproto} alt="football img" />
+                <img src={assets.eduproto} alt="prototype" />
               </li>
             </ul>
           </div>
