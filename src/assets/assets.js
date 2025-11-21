@@ -39,6 +39,7 @@ import paperwireego from "../assets/Egolending/paperwireego.jpg";
 import egogifhd from "../assets/Egolending/egogifhd.gif";
 import egomobile2 from "../assets/Egolending/egomobile2.jpg";
 import egomock2 from "../assets/Egolending/egomock2.jpg";
+import egodashboard from "../assets/Egolending/egodashboard.png";
 
 // Pleasurate project pictures
 import pleasuratesplash from "../assets/Pleasurate/pleasuratesplash.png";
@@ -105,6 +106,14 @@ import taskmanager from "../assets/taskmanager.png";
 import adexai from "../assets/adexai.png";
 import freecode from "../assets/freecode.png";
 
+// Edutech
+import eduproto from "../assets/edutech/edutechproto.gif";
+import dashboardedu from "../assets/edutech/dashboardedu.png";
+import edubilling from "../assets/edutech/edubilling.png";
+import edurequest from "../assets/edutech/edurequest.png";
+import edustaff from "../assets/edutech/edustaff.png";
+import edudashframe from "../assets/edutech/edudashframe.png";
+
 export const assets = {
   illustrate3,
   react,
@@ -124,6 +133,7 @@ export const assets = {
   contact,
   Adeboyeelishacv,
   egolendingdp,
+  egodashboard,
   pleasuratehd,
   boozlecover,
   signaturedp,
@@ -197,4 +207,9 @@ export const assets = {
   adexgoogle,
   googleico,
   freecode,
+  eduproto,
+  dashboardedu,
+  edubilling,
+  edurequest,
+  edustaff,
 };
