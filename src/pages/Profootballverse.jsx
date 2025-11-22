@@ -33,10 +33,10 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.profootballversedp} alt="home page picture" />
+                <img src={assets.profootballgif} alt="home page picture" />
               </li>
             </ul>
-            <figcaption></figcaption>
+            <figcaption>Hi-fi prototype</figcaption>
           </div>
         </div>
       </section>
@@ -227,7 +227,7 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.Match} alt="football img" />
+                <img src={assets.profootballgif} alt="football img" />
               </li>
             </ul>
             <figcaption>Hi fidelity design</figcaption>

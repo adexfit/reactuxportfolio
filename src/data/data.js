@@ -50,7 +50,7 @@ export const projectList = [
   {
     title: "ProfootBallVerse",
     desc: "An online community where football lovers discuss everything about football",
-    imgSrc: `${assets.profootballgif}`,
+    imgSrc: `${assets.profootballversedp}`,
     pageLink: "/profootballverse",
     netlify: "/",
     hosted: false,
