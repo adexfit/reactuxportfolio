@@ -2,11 +2,19 @@ import React from "react";
 import Header from "../components/Header";
 import OtherProjects from "../components/OtherProjects";
 import { assets } from "../assets/assets";
+import { useState } from "react";
 
 const Pleasurate = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <div>
       <Header title="Pleasurate" />
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <span className="close">&times;</span>
+          <img className="modal-content" src={selectedImage} alt="Expanded" />
+        </div>
+      )}
       <section>
         <div className="container two__column">
           <div className="text__column">
@@ -39,7 +47,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.pleasuratesplash} alt="img" />
+                <img
+                  src={assets.pleasuratesplash}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.pleasuratesplash)}
+                />
               </li>
             </ul>
             <figcaption></figcaption>
@@ -63,7 +75,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.designprocess} alt="img" />
+                <img
+                  src={assets.designprocess}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.designprocess)}
+                />
               </li>
             </ul>
           </div>
@@ -75,12 +91,19 @@ const Pleasurate = () => {
           <div className="text__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.brainstorm} alt="img" />
+                <img
+                  src={assets.brainstorm}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.brainstorm)}
+                />
               </li>
               <li className="img">
                 <img
                   src={assets.pleasurate_problem_statement}
                   alt="pleasurate_problem_statement.png"
+                  onClick={() =>
+                    setSelectedImage(assets.pleasurate_problem_statement)
+                  }
                 />
               </li>
             </ul>
@@ -214,7 +237,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.question_landlords} alt="img" />
+                <img
+                  src={assets.question_landlords}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.question_landlords)}
+                />
               </li>
             </ul>
             <figcaption>Some research questions</figcaption>
@@ -223,7 +250,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.question_tenant} alt="img" />
+                <img
+                  src={assets.question_tenant}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.question_tenant)}
+                />
               </li>
             </ul>
             <figcaption>some research questions</figcaption>
@@ -271,7 +302,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.person3} alt="persona img" />
+                <img
+                  src={assets.person3}
+                  alt="persona img"
+                  onClick={() => setSelectedImage(assets.person3)}
+                />
               </li>
             </ul>
             <figcaption>Persona 1</figcaption>
@@ -279,7 +314,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.pleasurate_persona2} alt="persona2 img" />
+                <img
+                  src={assets.pleasurate_persona2}
+                  alt="persona2 img"
+                  onClick={() => setSelectedImage(assets.pleasurate_persona2)}
+                />
               </li>
             </ul>
             <figcaption>persona 2</figcaption>
@@ -295,6 +334,7 @@ const Pleasurate = () => {
                 <img
                   src={assets.pleasurate_stories1}
                   alt="pleasurate user stories"
+                  onClick={() => setSelectedImage(assets.pleasurate_stories1)}
                 />
               </li>
             </ul>
@@ -306,6 +346,7 @@ const Pleasurate = () => {
                 <img
                   src={assets.pleasurate_stories}
                   alt="pleasurate user stories"
+                  onClick={() => setSelectedImage(assets.pleasurate_stories)}
                 />
               </li>
             </ul>
@@ -319,7 +360,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.empathymap2} alt="empathy map img" />
+                <img
+                  src={assets.empathymap2}
+                  alt="empathy map img"
+                  onClick={() => setSelectedImage(assets.empathymap2)}
+                />
               </li>
             </ul>
             <figcaption>Empathy map</figcaption>
@@ -327,7 +372,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.painpoints} alt="pain points img" />
+                <img
+                  src={assets.painpoints}
+                  alt="pain points img"
+                  onClick={() => setSelectedImage(assets.painpoints)}
+                />
               </li>
             </ul>
             <figcaption>painpoints</figcaption>
@@ -340,7 +389,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.journeymap2} alt="journeymap2 img" />
+                <img
+                  src={assets.journeymap2}
+                  alt="journeymap2 img"
+                  onClick={() => setSelectedImage(assets.journeymap2)}
+                />
               </li>
             </ul>
             <figcaption>Journey map</figcaption>
@@ -353,7 +406,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.userflow2} alt="img" />
+                <img
+                  src={assets.userflow2}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.userflow2)}
+                />
               </li>
             </ul>
             <figcaption>User flow</figcaption>
@@ -361,7 +418,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.ai} alt="img" />
+                <img
+                  src={assets.ai}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.ai)}
+                />
               </li>
             </ul>
             <figcaption>Information Architecture</figcaption>
@@ -374,7 +435,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.wireframe} alt="img" />
+                <img
+                  src={assets.wireframe}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.wireframe)}
+                />
               </li>
             </ul>
             <figcaption>Wireframe</figcaption>
@@ -382,7 +447,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.pleasuratehd} alt="img" />
+                <img
+                  src={assets.pleasuratehd}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.pleasuratehd)}
+                />
               </li>
             </ul>
             <figcaption>high-fidelity design</figcaption>
@@ -395,7 +464,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.pleasurate_low_proto} alt="img" />
+                <img
+                  src={assets.pleasurate_low_proto}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.pleasurate_low_proto)}
+                />
               </li>
             </ul>
             <figcaption>Low-fidelity prototype</figcaption>
@@ -403,7 +476,11 @@ const Pleasurate = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.pleasurate_hd_proto} alt="img" />
+                <img
+                  src={assets.pleasurate_hd_proto}
+                  alt="img"
+                  onClick={() => setSelectedImage(assets.pleasurate_hd_proto)}
+                />
               </li>
             </ul>
             <figcaption>High fidelity prototype</figcaption>

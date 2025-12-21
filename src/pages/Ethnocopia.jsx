@@ -2,15 +2,16 @@ import React from "react";
 import Header from "../components/Header";
 import OtherProjects from "../components/OtherProjects";
 import { assets } from "../assets/assets";
-import { BiUnderline } from "react-icons/bi";
 import { useState } from "react";
 
-const Profootballverse = () => {
+const Ethnocopia = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div>
-      <Header title="Profootballverse" />
+      <Header title="Ethnocopia" />
+
+      {/* Modal for expanded image view */}
       {selectedImage && (
         <div className="modal" onClick={() => setSelectedImage(null)}>
           <span className="close">&times;</span>
@@ -21,36 +22,121 @@ const Profootballverse = () => {
       <section>
         <div className="container two__column">
           <div className="text__column">
-            <h2 className="colored_heading">Introduction</h2>
+            <h2 className="colored_heading">Project Overview</h2>
             <p>
-              ProFootballVerse is an all-in-one platform designed for football
-              enthusiasts to stay updated with real-time scores, engage in
-              discussions via chat, read the latest football news, and
-              participate in quizzes to test their knowledge. The goal of this
-              UX case study is to analyze the design process, user experience
-              improvements, and key takeaways from developing this interactive
-              platform.
-            </p>
-
-            <h2 className="colored_heading">Background</h2>
-            <p>
-              This project was done for a start-up aiming to create a seamless
-              and engaging football experience for fans worldwide. The project
-              lasted for two months, and I was the only designer who worked on
-              the project.
+              Ethnocopia is a culture-focused social platform designed to help
+              people from different ethnic backgrounds connect, share stories,
+              and learn from one another. The goal of this redesign was to
+              improve usability, clarity, and engagement while positioning
+              Ethnocopia as a credible alternative to fragmented cultural
+              communities on mainstream social platforms.
+              <br />
+              <br />
+              This case study outlines my end-to-end redesign process, from
+              research and strategy to execution and outcomes.
             </p>
           </div>
           <div className="image__column">
             <ul className="images">
               <li className="img">
                 <img
-                  src={assets.profootballgif}
+                  src={assets.ethnohome}
                   alt="home page picture"
-                  onClick={() => setSelectedImage(assets.profootballgif)}
+                  onClick={() => setSelectedImage(assets.ethnohome)}
                 />
               </li>
             </ul>
-            <figcaption>Hi-fi prototype</figcaption>
+            <figcaption>User feed (click to enlarge)</figcaption>
+          </div>
+        </div>
+      </section>
+
+      <section className="light__background">
+        <div className="container two__column">
+          <div className="image__column">
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.designprocess}
+                  alt="design process image"
+                  onClick={() => setSelectedImage(assets.designprocess)}
+                />
+              </li>
+            </ul>
+          </div>
+          <div className="text__column">
+            <h2 className="colored_heading">My roles</h2>
+            <p>
+              I led the redesign as the sole product designer, collaborating
+              with stakeholders and developers. My responsibilities included:
+            </p>
+
+            <ol className="list">
+              <li>Planning and conducting usability research</li>
+              <li>Running a UX competitive audit</li>
+              <li>Defining UX problems and success metrics</li>
+              <li>Information architecture and navigation restructuring</li>
+              <li>Homepage redesign and interaction patterns</li>
+              <li>Low- and high-fidelity design iterations</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container two__column">
+          <div className="text__column">
+            <h2 className="colored_heading">Problem Statement</h2>
+            <p>
+              Despite strong positioning around culture and community,
+              Ethnocopia struggled with user engagement and retention. Early
+              users expressed interest in the mission but found the platform
+              difficult to navigate and understand.
+              <br />
+              The existing experience made it hard for users to:
+            </p>
+            <ol className="list">
+              <li>
+                Understand what Ethnocopia offers within the first few seconds
+              </li>
+              <li>
+                Navigate between communities, content, and user interactions
+              </li>
+              <li>Discover relevant cultural content</li>
+              <li>Feel motivated to explore or contribute</li>
+            </ol>
+          </div>
+          <div className="image__column">
+            <img
+              src={assets.ethpersona1}
+              alt="user persona 1"
+              onClick={() => setSelectedImage(assets.ethpersona1)}
+            />
+
+            <figcaption>User Persona 1 (click to enlarge)</figcaption>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container two__column">
+          <div className="image__column">
+            <img
+              src={assets.ethpersona2}
+              alt="user persona 2"
+              onClick={() => setSelectedImage(assets.ethpersona2)}
+            />
+
+            <figcaption>User Persona 2 (click to enlarge)</figcaption>
+          </div>
+          <div className="image__column">
+            <img
+              src={assets.ethpersona3}
+              alt="user persona 3"
+              onClick={() => setSelectedImage(assets.ethpersona3)}
+            />
+
+            <figcaption>User Persona 3 (click to enlarge)</figcaption>
           </div>
         </div>
       </section>
@@ -58,101 +144,57 @@ const Profootballverse = () => {
       <section className="light__background">
         <div className="container two__column">
           <div className="text__column">
-            <h2 className="colored_heading">My roles</h2>
-
+            <h2 className="colored_heading">User Research & Insights</h2>
+            <p>
+              I conducted a moderated usability study with participants who
+              matched Ethnocopia’s target audience: culture enthusiasts,
+              creatives, and socially curious users. Participants were asked to
+              complete common tasks such as exploring cultural groups, finding
+              content, and understanding the platform’s purpose.
+            </p>
+            <h4>Key Findings:</h4>
             <ol className="list">
-              <li>User Research</li>
-              <li>Interaction design</li>
-              <li>Wireframing</li>
-              <li>Prototyping and Testing</li>
+              <li>
+                Users struggled to understand the platform’s value proposition
+                on arrival
+              </li>
+              <li>Users felt lost when moving between pages</li>
+              <li>
+                Most participants struggled to navigate the platform without
+                guidance
+              </li>
+              <li>No strong feedback or confirmation after actions</li>
             </ol>
           </div>
-          <div className="image__column">
-            <ul className="images">
-              <li className="img">
-                <img src={assets.designprocess} alt="design process image" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container two__column">
           <div className="text__column">
-            <h3 className="colored_heading">Problem Statement</h3>
+            <h2 className="colored_heading">Competitive Audit</h2>
             <p>
-              Football fans crave a centralized platform where they can discuss
-              matches, read football news, and take engaging quizzes. Existing
-              platforms are either too fragmented or fail to provide an
-              immersive experience that balances discussion, news, and
-              interactive quizzes in one place. The goal was to design an
-              engaging, user-friendly, and content-rich football platform that
-              encourages interaction and community building.
+              I conducted a competitive audit of both direct and indirect
+              competitors, including cultural platforms, community forums, and
+              social networks with strong group-based interactions.
             </p>
-
-            <img
-              src={assets.UXDesign}
-              alt="user journey img"
-              onClick={() => setSelectedImage(assets.UXDesign)}
-            />
-          </div>
-          <div className="text__column">
-            <h3 className="colored_heading">User Research & Insights</h3>
+            <h4>Key findings:</h4>
+            <ol className="list">
+              <li>
+                Competitors excelled at clear onboarding and content surfacing
+              </li>
+              <li>
+                Visual storytelling plays a key role in emotional connection
+              </li>
+              <li>No platform that celebrates ethnicity holistically</li>
+              <li>
+                No competitor successfully combined deep cultural storytelling
+                with modern social UX patterns
+              </li>
+              <li>
+                Ethnocopia had a stronger cultural narrative but weaker UX
+                clarity
+              </li>
+            </ol>
             <p>
-              To understand football fans’ behavior and expectations, I
-              conducted 7 in-depth user interviews and surveyed 50 football
-              enthusiasts across various demographics, including casual fans,
-              analysts, and bloggers.
-            </p>
-            <h6
-              style={{
-                fontSize: 16,
-                fontWeight: 400,
-              }}
-            >
-              Target Audience
-            </h6>
-            <ul className="list">
-              <li>Football fans of all ages</li>
-              <li>Users who actively follow real-time matches</li>
-              <li>
-                Sports enthusiasts who enjoy discussing and debating
-                football-related topics
-              </li>
-              <li>Quiz lovers who want to test their football knowledge</li>
-            </ul>
-            <br />
-
-            <h6 style={{ fontSize: 16, fontWeight: 400 }}>
-              Pain Points Identified:
-            </h6>
-            <ul className="list">
-              <li>
-                Switching between multiple apps for scores, news, and
-                discussions
-              </li>
-              <li>
-                Difficult to find real-time discussions on ongoing matches.
-              </li>
-              <li>
-                Many football platforms have cluttered UI and overwhelming ads.
-              </li>
-            </ul>
-            <br />
-            <h6 style={{ fontSize: 16, fontWeight: 400 }}>Needs:</h6>
-            <ul className="list">
-              <li>A seamless discussion forum with live match threads.</li>
-              <li>A news feed with credible sources and real-time updates.</li>
-              <li>
-                Interactive football quizzes to test knowledge and engagement.
-              </li>
-            </ul>
-            <br />
-
-            <p>
-              Armed with this knowledge, I set out to design an app that would
-              address these issues.
+              This audit helped me identify gaps and opportunities for
+              Ethnocopia to differentiate through cultural depth combined with
+              modern UX patterns.
             </p>
           </div>
         </div>
@@ -161,36 +203,19 @@ const Profootballverse = () => {
       <section>
         <div className="container two__column">
           <div className="text__column">
-            <h3 className="colored_heading">Personas & User Journey Mapping</h3>
-            <h6 style={{ fontSize: 16, fontWeight: 400 }}>
-              Persona 1: James - A Die-Hard Football Fan
-            </h6>
+            <h3 className="colored_heading">Defining the Design Strategy</h3>
+            <p>Based on research, I defined the following design goals:</p>
             <ul className="list">
-              <li>Needs: A community space to discuss matches in real time.</li>
-              <li>
-                Pain Point: Struggles to find quality discussions without
-                trolls.
-              </li>
-              <li>
-                Goal: Wants a well-moderated discussion board with real
-                insights.
-              </li>
-            </ul>
-            <br />
-            <h6 style={{ fontSize: 16, fontWeight: 400 }}>
-              Persona 2: Maria - A Casual Football Viewer
-            </h6>
-            <ul className="list">
-              <li>
-                Needs: A one-stop platform for news and interactive content.
-              </li>
-              <li>Pain Point: Gets overwhelmed by complex sports analytics.</li>
-              <li>Goal: Wants simple, engaging, and interactive content.</li>
+              <li>Make Ethnocopia’s purpose instantly clear</li>
+              <li>Reduce cognitive load through simplified navigation</li>
+              <li>Improve content discoverability</li>
+              <li>Encourage exploration and participation</li>
+              <li>Design a scalable foundation for future features</li>
             </ul>
             <p>
-              After defining the personas, I mapped their user journeys to
-              optimize the navigation flow and content structure.
+              These goals guided every design decision throughout the redesign.
             </p>
+            <br />
           </div>
 
           <div className="text__column">
@@ -215,11 +240,7 @@ const Profootballverse = () => {
             </ul>
             <ul className="images">
               <li className="img">
-                <img
-                  src={assets.wirefootball}
-                  alt="wireframe img"
-                  onClick={() => setSelectedImage(assets.wirefootball)}
-                />
+                <img src={assets.wirefootball} alt="wireframe img" />
               </li>
             </ul>
             <figcaption>Wireframe</figcaption>
@@ -249,11 +270,7 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img
-                  src={assets.profootballgif}
-                  alt="football img"
-                  onClick={() => setSelectedImage(assets.profootballgif)}
-                />
+                <img src={assets.profootballgif} alt="football img" />
               </li>
             </ul>
             <figcaption>Hi fidelity design</figcaption>
@@ -321,7 +338,6 @@ const Profootballverse = () => {
                 <img
                   src={assets.profootballtable}
                   alt="high fidelity wireframe"
-                  onClick={() => setSelectedImage(assets.profootballtable)}
                 />
               </li>
             </ul>
@@ -333,7 +349,6 @@ const Profootballverse = () => {
                 <img
                   src={assets.profootballchat}
                   alt="high fidelity wireframe"
-                  onClick={() => setSelectedImage(assets.profootballchat)}
                 />
               </li>
             </ul>
@@ -347,11 +362,7 @@ const Profootballverse = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img
-                  src={assets.mobilechat}
-                  alt="high fidelity wireframe"
-                  onClick={() => setSelectedImage(assets.mobilechat)}
-                />
+                <img src={assets.mobilechat} alt="high fidelity wireframe" />
               </li>
             </ul>
             <figcaption>mobile app</figcaption>
@@ -364,7 +375,6 @@ const Profootballverse = () => {
                   src={assets.mobileHome}
                   alt="high fidelity wireframe"
                   height={563}
-                  onClick={() => setSelectedImage(assets.mobileHome)}
                 />
               </li>
             </ul>
@@ -420,9 +430,9 @@ const Profootballverse = () => {
         </div>
       </section>
 
-      <OtherProjects title="ProfootBallVerse" />
+      <OtherProjects title="Ethnocopia" />
     </div>
   );
 };
 
-export default Profootballverse;
+export default Ethnocopia;

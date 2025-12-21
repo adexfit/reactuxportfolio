@@ -2,11 +2,19 @@ import React from "react";
 import Header from "../components/Header";
 import OtherProjects from "../components/OtherProjects";
 import { assets } from "../assets/assets";
+import { useState } from "react";
 
 const Egolending = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <div>
       <Header title="Egolending" />
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <span className="close">&times;</span>
+          <img className="modal-content" src={selectedImage} alt="Expanded" />
+        </div>
+      )}
 
       <section>
         <div className="container two__column">
@@ -36,7 +44,11 @@ const Egolending = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.egolendingdp} alt="home page picture" />
+                <img
+                  src={assets.egolendingdp}
+                  alt="home page picture"
+                  onClick={() => setSelectedImage(assets.egolendingdp)}
+                />
               </li>
             </ul>
             <figcaption></figcaption>
@@ -73,6 +85,7 @@ const Egolending = () => {
               <li className="img">
                 <img
                   src={assets.problem_statement_ego}
+                  onClick={() => setSelectedImage(assets.problem_statement_ego)}
                   alt="problem statement image"
                 />
               </li>
@@ -80,6 +93,7 @@ const Egolending = () => {
                 <img
                   src={assets.ego_goal_statement}
                   alt="goal statement image"
+                  onClick={() => setSelectedImage(assets.ego_goal_statement)}
                 />
               </li>
             </ul>
@@ -122,7 +136,11 @@ const Egolending = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.ego_persona} alt="Persona img" />
+                <img
+                  src={assets.ego_persona}
+                  alt="Persona img"
+                  onClick={() => setSelectedImage(assets.ego_persona)}
+                />
               </li>
             </ul>
             <figcaption>Persona</figcaption>
@@ -131,7 +149,11 @@ const Egolending = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.ego_user_journey} alt="user journey img" />
+                <img
+                  src={assets.ego_user_journey}
+                  alt="user journey img"
+                  onClick={() => setSelectedImage(assets.ego_user_journey)}
+                />
               </li>
             </ul>
             <figcaption>User Journey Map</figcaption>
@@ -159,12 +181,14 @@ const Egolending = () => {
                 <img
                   src={assets.borrowerai}
                   alt="borrower information achitecture img"
+                  onClick={() => setSelectedImage(assets.borrowerai)}
                 />
               </li>
               <li className="img">
                 <img
                   src={assets.investorsai}
                   alt="investor information achitecture img"
+                  onClick={() => setSelectedImage(assets.investorsai)}
                 />
               </li>
             </ul>
@@ -178,10 +202,18 @@ const Egolending = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.digitalegowire} alt="digital wireframe" />
+                <img
+                  src={assets.digitalegowire}
+                  alt="digital wireframe"
+                  onClick={() => setSelectedImage(assets.digitalegowire)}
+                />
               </li>
               <li className="img">
-                <img src={assets.egogif} alt="low fidelity prototype" />
+                <img
+                  src={assets.egogif}
+                  alt="low fidelity prototype"
+                  onClick={() => setSelectedImage(assets.egogif)}
+                />
               </li>
             </ul>
           </div>
@@ -198,7 +230,11 @@ const Egolending = () => {
             </p>
             <ul className="images">
               <li className="img">
-                <img src={assets.paperwireego} alt="paper wireframe" />
+                <img
+                  src={assets.paperwireego}
+                  alt="paper wireframe"
+                  onClick={() => setSelectedImage(assets.paperwireego)}
+                />
               </li>
             </ul>
           </div>
@@ -229,7 +265,11 @@ const Egolending = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.egogifhd} alt="high fidelity wireframe" />
+                <img
+                  src={assets.egogifhd}
+                  alt="high fidelity wireframe"
+                  onClick={() => setSelectedImage(assets.egogifhd)}
+                />
               </li>
             </ul>
             <figcaption>high-fidelity prototype</figcaption>
@@ -242,7 +282,11 @@ const Egolending = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.egomobile2} alt="high fidelity wireframe" />
+                <img
+                  src={assets.egomobile2}
+                  alt="high fidelity wireframe"
+                  onClick={() => setSelectedImage(assets.egomobile2)}
+                />
               </li>
             </ul>
             <figcaption>mobile app</figcaption>
@@ -251,7 +295,11 @@ const Egolending = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.egomock2} alt="high fidelity wireframe" />
+                <img
+                  src={assets.egomock2}
+                  alt="high fidelity wireframe"
+                  onClick={() => setSelectedImage(assets.egomock2)}
+                />
               </li>
             </ul>
             <figcaption>mobile app</figcaption>

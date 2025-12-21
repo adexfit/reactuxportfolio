@@ -3,11 +3,29 @@ import Header from "../components/Header";
 import OtherProjects from "../components/OtherProjects";
 import { assets } from "../assets/assets";
 import { BiUnderline } from "react-icons/bi";
+import { useState } from "react";
+import Imagemodal from "../components/Imagemodal";
 
 const EduTech = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <div>
       <Header title="EduTech" />
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <span className="close">&times;</span>
+          <img className="modal-content" src={selectedImage} alt="Expanded" />
+        </div>
+      )}
+
+      {/* {selectedImage && (
+        <Imagemodal
+          selectedImage={selectedImage}
+          setSelectedImage={setSelectedImage}
+          onClick={() => setSelectedImage(null)}
+        />
+      )} */}
+
       <section>
         <div className="container two__column">
           <div className="text__column">
@@ -31,7 +49,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.eduproto} alt="home page picture" />
+                <img
+                  src={assets.eduproto}
+                  alt="home page picture"
+                  onClick={() => setSelectedImage(assets.eduproto)}
+                />
               </li>
             </ul>
             <figcaption></figcaption>
@@ -55,7 +77,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.designprocess} alt="design process image" />
+                <img
+                  src={assets.designprocess}
+                  alt="design process image"
+                  onClick={() => setSelectedImage(assets.designprocess)}
+                />
               </li>
             </ul>
           </div>
@@ -69,17 +95,17 @@ const EduTech = () => {
             <p>
               Build an intuitive, scalable platform that supports the daily
               workflows of:
-              <ul className="list">
-                <li>
-                  <b>Teachers:</b> managing students, attendance, classes, and
-                  performance
-                </li>
-                <li>
-                  <b>Schools:</b> managing teachers, students, departments, and
-                  overall academic operations
-                </li>
-              </ul>
             </p>
+            <ul className="list">
+              <li>
+                <b>Teachers:</b> managing students, attendance, classes, and
+                performance
+              </li>
+              <li>
+                <b>Schools:</b> managing teachers, students, departments, and
+                overall academic operations
+              </li>
+            </ul>
 
             {/* <img src={assets.UXDesign} alt="user journey img" /> */}
           </div>
@@ -89,16 +115,17 @@ const EduTech = () => {
               During discovery, I observed that most schools rely heavily on
               fragmented tools like spreadsheets, WhatsApp groups, and paper
               records. This created several challenges:
-              <ul className="list">
-                <li>Time-consuming administrative tasks</li>
-                <li>Limited visibility into student performance</li>
-                <li>Manual processes prone to human error</li>
-                <li>
-                  Inefficient workflow for teachers juggling multiple classes
-                </li>
-                <li>No unified source of truth for school-wide operations</li>
-              </ul>
             </p>
+            <ul className="list">
+              <li>Time-consuming administrative tasks</li>
+              <li>Limited visibility into student performance</li>
+              <li>Manual processes prone to human error</li>
+              <li>
+                Inefficient workflow for teachers juggling multiple classes
+              </li>
+              <li>No unified source of truth for school-wide operations</li>
+            </ul>
+
             <p>
               I defined the core problem as: <br />
               <i>
@@ -165,22 +192,19 @@ const EduTech = () => {
         <div className="container two__column">
           <div className="text__column">
             <h3 className="colored_heading">Information Architecture</h3>
-            <p>
-              I designed two role-specific experiences:
-              <ul className="list">
-                <li>Teacher Dashboard</li>
-                <li>School Admin Dashboard</li>
-              </ul>
-            </p>
-            <p>
-              Other IA choices included:
-              <ul className="list">
-                <li>Role-based permissions</li>
-                <li>Modular navigation grouped by tasks</li>
-                <li>Global search for quick access to records</li>
-                <li>Notification center for reminders and announcements</li>
-              </ul>
-            </p>
+            <p>I designed two role-specific experiences:</p>
+            <ul className="list">
+              <li>Teacher Dashboard</li>
+              <li>School Admin Dashboard</li>
+            </ul>
+
+            <p>Other IA choices included:</p>
+            <ul className="list">
+              <li>Role-based permissions</li>
+              <li>Modular navigation grouped by tasks</li>
+              <li>Global search for quick access to records</li>
+              <li>Notification center for reminders and announcements</li>
+            </ul>
           </div>
           <div className="text__column">
             <h3 className="colored_heading">Wireframing</h3>
@@ -213,7 +237,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.edudashframe} alt="low fi wireframe" />
+                <img
+                  src={assets.edudashframe}
+                  alt="low fi wireframe"
+                  onClick={() => setSelectedImage(assets.edudashframe)}
+                />
               </li>
             </ul>
             <figcaption> wireframe</figcaption>
@@ -222,7 +250,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.eduwire2} alt="low fi wireframe" />
+                <img
+                  src={assets.eduwire2}
+                  alt="low fi wireframe"
+                  onClick={() => setSelectedImage(assets.eduwire2)}
+                />
               </li>
             </ul>
             <figcaption>wireframe</figcaption>
@@ -234,17 +266,16 @@ const EduTech = () => {
         <div className="container">
           <div className="text__column">
             <h3 className="colored_heading">Workflow Optimization</h3>
-            <p>
-              I focused heavily on reducing friction in teacher workflows:
-              <ul className="list">
-                <li>Attendance marking reduced from 6 steps to 2 steps</li>
-                <li>Student registration reduced from 5 steps to 3 steps</li>
-                <li>
-                  Results upload improved with an Excel-compatible template and
-                  inline editing
-                </li>
-              </ul>
-            </p>
+            <p>I focused heavily on reducing friction in teacher workflows:</p>
+            <ul className="list">
+              <li>Attendance marking reduced from 6 steps to 2 steps</li>
+              <li>Student registration reduced from 5 steps to 3 steps</li>
+              <li>
+                Results upload improved with an Excel-compatible template and
+                inline editing
+              </li>
+            </ul>
+
             <p>
               These improvements came directly from observing how teachers work
               in real environments.
@@ -300,7 +331,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.eduproto} alt="prototype" />
+                <img
+                  src={assets.eduproto}
+                  alt="prototype"
+                  onClick={() => setSelectedImage(assets.eduproto)}
+                />
               </li>
             </ul>
           </div>
@@ -329,7 +364,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.dashboardedu} alt="high fidelity wireframe" />
+                <img
+                  src={assets.dashboardedu}
+                  alt="high fidelity wireframe"
+                  onClick={() => setSelectedImage(assets.dashboardedu)}
+                />
               </li>
             </ul>
             <figcaption>Dashboard</figcaption>
@@ -337,7 +376,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.edustaff} alt="high fidelity wireframe" />
+                <img
+                  src={assets.edustaff}
+                  alt="high fidelity wireframe"
+                  onClick={() => setSelectedImage(assets.edustaff)}
+                />
               </li>
             </ul>
             <figcaption>Staff management page</figcaption>
@@ -350,7 +393,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.edubilling} alt="high fidelity" />
+                <img
+                  src={assets.edubilling}
+                  alt="high fidelity"
+                  onClick={() => setSelectedImage(assets.edubilling)}
+                />
               </li>
             </ul>
             <figcaption>Billing page</figcaption>
@@ -359,7 +406,11 @@ const EduTech = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.edurequest} alt="high fidelity" />
+                <img
+                  src={assets.edurequest}
+                  alt="high fidelity"
+                  onClick={() => setSelectedImage(assets.edurequest)}
+                />
               </li>
             </ul>
             <figcaption>School request page</figcaption>

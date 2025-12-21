@@ -2,11 +2,19 @@ import React from "react";
 import Header from "../components/Header";
 import OtherProjects from "../components/OtherProjects";
 import { assets } from "../assets/assets";
+import { useState } from "react";
 
 const Boozle = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <div>
       <Header title="Boozle" />
+      {selectedImage && (
+        <div className="modal" onClick={() => setSelectedImage(null)}>
+          <span className="close">&times;</span>
+          <img className="modal-content" src={selectedImage} alt="Expanded" />
+        </div>
+      )}
       <section>
         <div className="container two__column">
           <div className="text__column">
@@ -42,6 +50,7 @@ const Boozle = () => {
                   height="450px"
                   width="auto"
                   alt="home page picture"
+                  onClick={() => setSelectedImage(assets.boozle_home)}
                 />
               </li>
             </ul>
@@ -80,12 +89,16 @@ const Boozle = () => {
                 <img
                   src={assets.boozle_problem_statement}
                   alt="problem statement image"
+                  onClick={() =>
+                    setSelectedImage(assets.boozle_problem_statement)
+                  }
                 />
               </li>
               <li className="img">
                 <img
                   src={assets.boozle_goal_statement}
                   alt="goal statement image"
+                  onClick={() => setSelectedImage(assets.boozle_goal_statement)}
                 />
               </li>
             </ul>
@@ -122,7 +135,11 @@ const Boozle = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.boozle_persona} alt="Persona img" />
+                <img
+                  src={assets.boozle_persona}
+                  alt="Persona img"
+                  onClick={() => setSelectedImage(assets.boozle_persona)}
+                />
               </li>
             </ul>
             <figcaption>Persona</figcaption>
@@ -149,7 +166,11 @@ const Boozle = () => {
           <div className="image__column">
             <ul className="images">
               <li className="img">
-                <img src={assets.ai_boozle} alt="Information architecture" />
+                <img
+                  src={assets.ai_boozle}
+                  alt="Information architecture"
+                  onClick={() => setSelectedImage(assets.ai_boozle)}
+                />
               </li>
             </ul>
             <figcaption>Information architecture</figcaption>
@@ -160,7 +181,11 @@ const Boozle = () => {
             <div className="image__column">
               <ul className="images">
                 <li className="img">
-                  <img src={assets.userflowprofile} alt="user flow" />
+                  <img
+                    src={assets.userflowprofile}
+                    alt="user flow"
+                    onClick={() => setSelectedImage(assets.userflowprofile)}
+                  />
                 </li>
               </ul>
               <figcaption>user flow for editing profile</figcaption>
@@ -169,7 +194,11 @@ const Boozle = () => {
             <div className="image__column">
               <ul className="images">
                 <li className="img">
-                  <img src={assets.userflowdiscussion} alt="user flow img" />
+                  <img
+                    src={assets.userflowdiscussion}
+                    alt="user flow img"
+                    onClick={() => setSelectedImage(assets.userflowdiscussion)}
+                  />
                 </li>
               </ul>
               <figcaption>User flow for discussions</figcaption>
@@ -189,6 +218,7 @@ const Boozle = () => {
                   width="auto"
                   id="img_special"
                   alt="paper wireframe 1"
+                  onClick={() => setSelectedImage(assets.paper1boo)}
                 />
                 <img
                   src={assets.paper2boo}
@@ -196,6 +226,7 @@ const Boozle = () => {
                   width="auto"
                   id="img_special"
                   alt="paper wireframe 2"
+                  onClick={() => setSelectedImage(assets.paper2boo)}
                 />
               </li>
             </ul>
@@ -224,11 +255,13 @@ const Boozle = () => {
                   src={assets.digital1boo}
                   id="img_special"
                   alt="digital wireframe 1"
+                  onClick={() => setSelectedImage(assets.digital1boo)}
                 />
                 <img
                   src={assets.digital2boo}
                   id="img_special"
                   alt="digital wireframe 2"
+                  onClick={() => setSelectedImage(assets.digital2boo)}
                 />
               </li>
             </ul>
@@ -261,6 +294,7 @@ const Boozle = () => {
                   src={assets.digital2boo}
                   alt="high fidelity wireframe"
                   id="img_special"
+                  onClick={() => setSelectedImage(assets.digital2boo)}
                 />
               </li>
             </ul>
@@ -276,11 +310,13 @@ const Boozle = () => {
                   src={assets.mock3}
                   alt="high fidelity wireframe"
                   id="img_special"
+                  onClick={() => setSelectedImage(assets.mock3)}
                 />
                 <img
                   src={assets.mock4}
                   alt="high fidelity wireframe"
                   id="img_special"
+                  onClick={() => setSelectedImage(assets.mock4)}
                 />
               </li>
             </ul>
@@ -293,11 +329,13 @@ const Boozle = () => {
                   src={assets.mock5}
                   alt="high fidelity wireframe"
                   id="img_special"
+                  onClick={() => setSelectedImage(assets.mock5)}
                 />
                 <img
                   src={assets.mock6}
                   alt="high fidelity wireframe"
                   id="img_special"
+                  onClick={() => setSelectedImage(assets.mock6)}
                 />
               </li>
             </ul>

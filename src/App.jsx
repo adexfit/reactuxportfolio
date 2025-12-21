@@ -5,9 +5,10 @@ import Profootballverse from "./pages/Profootballverse";
 import Egolending from "./pages/Egolending";
 import Pleasurate from "./pages/Pleasurate";
 import Boozle from "./pages/Boozle";
-import Filez from "./pages/Filez";
+//import Filez from "./pages/Filez";
 import KanbanBoard from "./pages/KanbanBoard";
 import EduTech from "./pages/Edutech";
+import Ethnocopia from "./pages/Ethnocopia";
 
 import Home from "./pages/Home/Home";
 import Layout from "./pages/Layout";
@@ -48,6 +49,7 @@ function App() {
               {/* <Route path="/filez" element={<Filez />} /> */}
               <Route path="/KanbanBoard" element={<KanbanBoard />} />
               <Route path="/edutech" element={<EduTech />} />
+              <Route path="/ethnocopia" element={<Ethnocopia />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
