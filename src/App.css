@@ -658,11 +658,11 @@ header {
   margin-top: 0.8rem;
 }
 
-.text__column {
+/* .text__column { */
   /* display: grid; */
   /* align-items: center; */
-  /* justify-items: center; */
-}
+  /* justify-items: left; */
+ /* }   */
 
 .text__column p {
   text-align: justify;
@@ -698,6 +698,14 @@ li {
 
 img:hover {
   cursor: pointer;
+}
+
+.padded{
+  padding: 3%;
+}
+
+.center {
+  text-align: center;
 }
 
 /* Responsive media query code */

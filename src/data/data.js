@@ -31,6 +31,14 @@ export const mySkills = [
 ];
 
 export const projectList = [
+    {
+    title: "Ethnocopia",
+    desc: "Ethnocopia is a culture-focused social platform designed to help people from different ethnic backgrounds connect, share stories, and learn from one another",
+    imgSrc: `${assets.ethnocopiaprofile}`,
+    pageLink: "/ethnocopia",
+    netlify: "/",
+    hosted: false,
+  },
   {
     title: "EduTech",
     desc: "EduTech is a modern web-based platform that empowers teachers to effectively manage their students and classrooms — while enabling school administrators to oversee both students and teaching staff",

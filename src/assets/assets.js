@@ -115,6 +115,25 @@ import edustaff from "../assets/edutech/edustaff.png";
 import edudashframe from "../assets/edutech/edudashframe.png";
 import eduwire2 from "../assets/edutech/eduwire2.png";
 
+// Ethnocopia
+import ethnoanalytics from "../assets/ethno/ethnoanalytics.png";
+import ethnocopiaprofile from "../assets/ethno/ethnocopiaprofile.png";
+import ethnogroup from "../assets/ethno/ethnogroup.png";
+import ethnogroupsingle from "../assets/ethno/ethnogroupsingle.png";
+import ethnohome from "../assets/ethno/ethnohome.png";
+import ethnolanding from "../assets/ethno/ethnolanding.png";
+import ethpersona1 from "../assets/ethno/ethpersona1.jpg";
+import ethpersona2 from "../assets/ethno/ethpersona2.jpg";
+import ethpersona3 from "../assets/ethno/ethpersona3.jpg";
+import ethpersona4 from "../assets/ethno/ethpersona4.jpg";
+import landingethno from "../assets/ethno/landingethno.png";
+import ethnoai from "../assets/ethno/ethnoai.svg";
+import ethnohomeproto from "../assets/ethno/ethnohomeproto.gif";
+import ethnohifiproto from "../assets/ethno/ethnohifiproto.gif";
+import ethnolowfiproto from "../assets/ethno/ethnolowfiproto.gif";
+import ethnofeedbefore from "../assets/ethno/ethnofeedbefore.png";
+import ethnobeforegroup from "../assets/ethno/ethnobeforegroup.png";
+
 export const assets = {
   illustrate3,
   react,
@@ -215,4 +234,21 @@ export const assets = {
   edustaff,
   edudashframe,
   eduwire2,
+  ethnoanalytics,
+  ethnocopiaprofile,
+  ethnogroup,
+  ethnogroupsingle,
+  ethnohome,
+  ethnolanding,
+  ethpersona1,
+  ethpersona2,
+  ethpersona3,
+  ethpersona4,
+  landingethno,
+  ethnoai,
+  ethnohomeproto,
+  ethnohifiproto,
+  ethnolowfiproto,
+  ethnofeedbefore,
+  ethnobeforegroup,
 };

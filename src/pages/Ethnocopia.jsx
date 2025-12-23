@@ -22,7 +22,7 @@ const Ethnocopia = () => {
       <section>
         <div className="container two__column">
           <div className="text__column">
-            <h2 className="colored_heading">Project Overview</h2>
+            <h3 className="colored_heading">Project Overview</h3>
             <p>
               Ethnocopia is a culture-focused social platform designed to help
               people from different ethnic backgrounds connect, share stories,
@@ -46,7 +46,9 @@ const Ethnocopia = () => {
                 />
               </li>
             </ul>
-            <figcaption>User feed (click to enlarge)</figcaption>
+            <figcaption className="center">
+              User feed (click to enlarge)
+            </figcaption>
           </div>
         </div>
       </section>
@@ -65,7 +67,7 @@ const Ethnocopia = () => {
             </ul>
           </div>
           <div className="text__column">
-            <h2 className="colored_heading">My roles</h2>
+            <h3 className="colored_heading">My roles</h3>
             <p>
               I led the redesign as the sole product designer, collaborating
               with stakeholders and developers. My responsibilities included:
@@ -86,7 +88,7 @@ const Ethnocopia = () => {
       <section>
         <div className="container two__column">
           <div className="text__column">
-            <h2 className="colored_heading">Problem Statement</h2>
+            <h3 className="colored_heading">Problem Statement</h3>
             <p>
               Despite strong positioning around culture and community,
               Ethnocopia struggled with user engagement and retention. Early
@@ -113,7 +115,9 @@ const Ethnocopia = () => {
               onClick={() => setSelectedImage(assets.ethpersona1)}
             />
 
-            <figcaption>User Persona 1 (click to enlarge)</figcaption>
+            <figcaption className="center">
+              User Persona 1 (click to enlarge)
+            </figcaption>
           </div>
         </div>
       </section>
@@ -136,7 +140,9 @@ const Ethnocopia = () => {
               onClick={() => setSelectedImage(assets.ethpersona3)}
             />
 
-            <figcaption>User Persona 3 (click to enlarge)</figcaption>
+            <figcaption className="center">
+              User Persona 3 (click to enlarge)
+            </figcaption>
           </div>
         </div>
       </section>
@@ -144,7 +150,7 @@ const Ethnocopia = () => {
       <section className="light__background">
         <div className="container two__column">
           <div className="text__column">
-            <h2 className="colored_heading">User Research & Insights</h2>
+            <h3 className="colored_heading">User Research & Insights</h3>
             <p>
               I conducted a moderated usability study with participants who
               matched Ethnocopia’s target audience: culture enthusiasts,
@@ -152,7 +158,7 @@ const Ethnocopia = () => {
               complete common tasks such as exploring cultural groups, finding
               content, and understanding the platform’s purpose.
             </p>
-            <h4>Key Findings:</h4>
+            <h5>Key Findings:</h5>
             <ol className="list">
               <li>
                 Users struggled to understand the platform’s value proposition
@@ -167,13 +173,13 @@ const Ethnocopia = () => {
             </ol>
           </div>
           <div className="text__column">
-            <h2 className="colored_heading">Competitive Audit</h2>
+            <h3 className="colored_heading">Competitive Audit</h3>
             <p>
               I conducted a competitive audit of both direct and indirect
               competitors, including cultural platforms, community forums, and
               social networks with strong group-based interactions.
             </p>
-            <h4>Key findings:</h4>
+            <h5>Key findings:</h5>
             <ol className="list">
               <li>
                 Competitors excelled at clear onboarding and content surfacing
@@ -219,213 +225,246 @@ const Ethnocopia = () => {
           </div>
 
           <div className="text__column">
-            <h3 className="colored_heading">Wireframing & Prototyping</h3>
+            <h3 className="colored_heading">
+              Information Architecture & Navigation
+            </h3>
             <p>
-              I started with low-fidelity wireframes to outline the core
-              structure, focusing on:
+              One of the biggest changes was restructuring the existing
+              navigation.
             </p>
+            <h5>Key Improvements:</h5>
             <ul className="list">
               <li>
-                A homepage with trending discussions, latest news, and quizzes.
+                Simplified top-level navigation to focus on core user goals
               </li>
               <li>
-                A discussion forum with match-specific threads and live updates.
+                Renamed navigation items using familiar, task-oriented language
               </li>
               <li>
-                A news section with categorized and personalized articles.
-              </li>
-              <li>
-                A quiz module for football trivia and prediction challenges.
+                Grouped related features to reduce visual and cognitive overload
               </li>
             </ul>
-            <ul className="images">
-              <li className="img">
-                <img src={assets.wirefootball} alt="wireframe img" />
-              </li>
-            </ul>
-            <figcaption>Wireframe</figcaption>
           </div>
+        </div>
+
+        <div className="padded">
+          <img
+            className="img images"
+            src={assets.ethnoai}
+            alt="Information Architecture"
+            onClick={() => setSelectedImage(assets.ethnoai)}
+          />
+
+          <figcaption className="center">Information Architecture</figcaption>
         </div>
       </section>
 
       <section className="light__background">
         <div className="container two__column">
           <div className="text__column">
-            <h2 className="colored_heading">High-Fidelity Prototyping</h2>
-            <p>
-              Based on initial feedback, I developed high-fidelity prototypes in
-              Figma, incorporating:
-            </p>
+            <h3 className="colored_heading">Homepage Redesign</h3>
+            <p>The homepage redesign was central to the project.</p>
+            <h5>Goals:</h5>
             <ul className="list">
-              <li>Live Match Discussion Threads with real-time comments.</li>
               <li>
-                Personalized News Feed based on favorite teams and leagues.
+                Clearly communicate Ethnocopia’s value proposition within
+                seconds
               </li>
+              <li>Guide first-time users toward meaningful engagement</li>
+              <li>Balance inspiration with usability</li>
+            </ul>
+            <br />
+
+            <h5>Key Design Decisions:</h5>
+            <ul className="list">
               <li>
-                Interactive Football Quizzes with leaderboards and rewards.
+                Introduced a strong hero section explaining what Ethnocopia is
               </li>
+              <li>Added a clear primary call-to-action for new users</li>
+              <li>
+                Surfaced cultural stories and short videos to inspire
+                exploration
+              </li>
+              <li>Used visual hierarchy and spacing to reduce clutter</li>
+              <li>Designed modular sections to support future scalability</li>
             </ul>
           </div>
 
           <div className="image__column">
-            <ul className="images">
-              <li className="img">
-                <img src={assets.profootballgif} alt="football img" />
-              </li>
-            </ul>
-            <figcaption>Hi fidelity design</figcaption>
+            <div>
+              <img
+                className="img images"
+                src={assets.ethnohomeproto}
+                alt="football img"
+                onClick={() => setSelectedImage(assets.ethnohomeproto)}
+              />
+              <figcaption className="center"> Homepage design</figcaption>
+            </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="">
         <div className="container two__column">
-          <div className="text__column">
-            <h2 className="colored_heading">Usability Testing & Iterations</h2>
-            <h5>Usability Test Goals:</h5>
-            <ul className="list">
-              <li>
-                Is the navigation intuitive for both casual and hardcore fans?
-              </li>
-              <li>
-                Can users easily switch between discussions, news, and quizzes?
-              </li>
-              <li>
-                How well does the mobile version perform for on-the-go users?
+          <div className="image__column">
+            <h3 className="colored_heading">Low-fidelity prototype</h3>
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.ethnolowfiproto}
+                  alt="football img"
+                  onClick={() => setSelectedImage(assets.ethnolowfiproto)}
+                />
               </li>
             </ul>
-            <br />
+            <figcaption>Low-fidelity design</figcaption>
+          </div>
+          <div className="image__column">
+            <h3 className="colored_heading">High-fidelity prototype</h3>
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.ethnohifiproto}
+                  alt="football img"
+                  onClick={() => setSelectedImage(assets.ethnohifiproto)}
+                />
+              </li>
+            </ul>
+            <figcaption>High fidelity prototype</figcaption>
+          </div>
+        </div>
+      </section>
+      <section className="light__background">
+        <div className="container two__column">
+          <div className="image__column">
+            <h3 className="colored_heading">Before</h3>
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.ethnofeedbefore}
+                  alt="football img"
+                  onClick={() => setSelectedImage(assets.ethnofeedbefore)}
+                />
+              </li>
+            </ul>
+            <figcaption>User feed page</figcaption>
+          </div>
+          <div className="image__column">
+            <h3 className="colored_heading">After</h3>
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.ethnohome}
+                  alt="football img"
+                  onClick={() => setSelectedImage(assets.ethnohome)}
+                />
+              </li>
+            </ul>
+            <figcaption>User feed page</figcaption>
+          </div>
+        </div>
+      </section>
+      <section className="light__background">
+        <div className="container two__column">
+          <div className="image__column">
+            <h3 className="colored_heading">Before</h3>
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.ethnobeforegroup}
+                  alt="football img"
+                  onClick={() => setSelectedImage(assets.ethnobeforegroup)}
+                />
+              </li>
+            </ul>
+            <figcaption>Cultural groups page</figcaption>
+          </div>
+          <div className="image__column">
+            <h3 className="colored_heading">After</h3>
+            <ul className="images">
+              <li className="img">
+                <img
+                  src={assets.ethnogroup}
+                  alt="football img"
+                  onClick={() => setSelectedImage(assets.ethnogroup)}
+                />
+              </li>
+            </ul>
+            <figcaption>Cultural groups page</figcaption>
+          </div>
+        </div>
+      </section>
+      <section className="">
+        <div className="container two__column">
+          <div className="text__column">
+            <h3 className="colored_heading">Validation & Iteration</h3>
+            <p>
+              After designing the new flows and screens, I validated the
+              redesign by walking users through interactive prototypes.
+            </p>
             <h5>Results:</h5>
             <ul className="list">
-              <li>85% of users found the discussion board layout intuitive.</li>
-              <li>Some users requested a dark mode for better readability.</li>
+              <li>Users understood the platform’s purpose immediately</li>
+              <li>Task completion time was significantly reduced</li>
+              <li>Navigation felt intuitive and confidence-inspiring</li>
               <li>
-                Mobile responsiveness needed improvement for smaller screens.
+                Participants reported feeling more motivated to explore content
               </li>
             </ul>
+            <p>
+              These sessions helped me fine-tune labels, spacing, and content
+              prioritization before handoff.
+            </p>
+            <br />
           </div>
           <div className="text__column">
-            <h2 className="colored_heading">Iteration Changes:</h2>
-            <ul className="list">
-              <li>Improved thread organization and filtering options.</li>
-              <li>Some users requested a dark mode for better readability.</li>
-              <li>Optimized mobile responsiveness with a collapsible menu.</li>
-              <li>
-                Tab navigation was implemented for mobile screens for easy
-                navigation.
-              </li>
-            </ul>{" "}
+            <h3 className="colored_heading">Outcome & Impact</h3>
+            <p>
+              The redesign positioned Ethnocopia as a clearer, more engaging
+              cultural platform.
+            </p>
             <br />
-            <h2 className="colored_heading">Final UI Design:</h2>
-            <h5>Key Features</h5>
+            <h5>Key Outcomes:</h5>
             <ul className="list">
-              <li>Real-time discussion forums with match-specific threads.</li>
-              <li>Trending football news with personalized content.</li>
-              <li>Interactive quizzes with leaderboards and rewards.</li>
-              <li>User profiles with team preferences and achievements.</li>
-
-              <li>Mobile-friendly design for an optimal experience.</li>
+              <li>Improved usability and navigation clarity</li>
+              <li>Stronger first impression and value communication</li>
+              <li>Increased content discoverability</li>
+              <li>Scalable UX foundation for future growth</li>
             </ul>
+
+            <p>
+              While long-term metrics are ongoing, early feedback from users and
+              stakeholders has been highly positive.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="light__background">
         <div className="container two__column">
-          <div className="image__column">
-            <ul className="images">
-              <li className="img">
-                <img
-                  src={assets.profootballtable}
-                  alt="high fidelity wireframe"
-                />
-              </li>
-            </ul>
-            <figcaption>high-fidelity design</figcaption>
+          <div className="">
+            <h3 className="colored_heading">Conclusion</h3>
+            <p>
+              The Ethnocopia redesign was an opportunity to transform a
+              meaningful idea into a usable, scalable product experience. By
+              grounding design decisions in research and focusing on clarity, I
+              was able to realign the platform with both user needs and business
+              goals. This case study reflects my approach as a product designer:
+              strategic, research-driven, and deeply focused on user experience
+              outcomes.
+            </p>
           </div>
           <div className="image__column">
             <ul className="images">
               <li className="img">
                 <img
-                  src={assets.profootballchat}
+                  src={assets.ethnoanalytics}
                   alt="high fidelity wireframe"
+                  onClick={() => setSelectedImage(assets.ethnoanalytics)}
                 />
               </li>
             </ul>
-            <figcaption>high-fidelity design</figcaption>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container two__column">
-          <div className="image__column">
-            <ul className="images">
-              <li className="img">
-                <img src={assets.mobilechat} alt="high fidelity wireframe" />
-              </li>
-            </ul>
-            <figcaption>mobile app</figcaption>
-          </div>
-
-          <div className="image__column">
-            <ul className="images">
-              <li className="img">
-                <img
-                  src={assets.mobileHome}
-                  alt="high fidelity wireframe"
-                  height={563}
-                />
-              </li>
-            </ul>
-            <figcaption>mobile app</figcaption>
-          </div>
-        </div>
-      </section>
-      <section className="light__background">
-        <div className="container two__column">
-          <div className="text__column">
-            <h2 className="colored_heading">Outcome & Impact</h2>
-            <h5>Usability Test Goals:</h5>
-            <ul className="list">
-              <li>
-                Increased engagement by 60% during live matches (based on user
-                testing).
-              </li>
-              <li>
-                Enhanced retention through personalized news and interactive
-                content.
-              </li>
-              <li>
-                Positive feedback from early users on ease of use and
-                navigation.
-              </li>
-            </ul>
-            <br />
-            <h5>Lessons Learned & Next Steps</h5>
-            <ul className="list">
-              <li>
-                Balancing content and engagement is crucial for community
-                platforms.
-              </li>
-              <li>
-                Real-time interaction features need scalability for peak traffic
-                times.
-              </li>
-              <li>
-                User customization (team-based news, quiz categories) boosts
-                retention.
-              </li>
-            </ul>
-          </div>
-          <div className="text__column">
-            <h2 className="colored_heading">Next Steps:</h2>
-            <ul className="list">
-              <li>Implement AI-driven content recommendations.</li>
-              <li>Introduce live match prediction challenges.</li>
-              <li>Expand social sharing features for wider reach.</li>
-            </ul>{" "}
-            <br />
+            <figcaption>Admin Dashboard board</figcaption>
           </div>
         </div>
       </section>
