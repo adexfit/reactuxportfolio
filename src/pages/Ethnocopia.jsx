@@ -464,7 +464,7 @@ const Ethnocopia = () => {
                 />
               </li>
             </ul>
-            <figcaption>Admin Dashboard board</figcaption>
+            <figcaption>Admin Dashboard design</figcaption>
           </div>
         </div>
       </section>

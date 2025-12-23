@@ -31,7 +31,7 @@ export const mySkills = [
 ];
 
 export const projectList = [
-    {
+  {
     title: "Ethnocopia",
     desc: "Ethnocopia is a culture-focused social platform designed to help people from different ethnic backgrounds connect, share stories, and learn from one another",
     imgSrc: `${assets.ethnocopiaprofile}`,
@@ -79,14 +79,14 @@ export const projectList = [
     netlify: "/",
     hosted: false,
   },
-  {
-    title: "Kanban Board",
-    desc: "A simple Kanban board App which helps companies to manage their teams",
-    imgSrc: `${assets.Kanbanboard}`,
-    pageLink: "/KanbanBoard",
-    netlify: "https://adex-react-calculator.netlify.app/",
-    hosted: false,
-  },
+  // {
+  //   title: "Kanban Board",
+  //   desc: "A simple Kanban board App which helps companies to manage their teams",
+  //   imgSrc: `${assets.Kanbanboard}`,
+  //   pageLink: "/KanbanBoard",
+  //   netlify: "https://adex-react-calculator.netlify.app/",
+  //   hosted: false,
+  // },
 ];
 
 export const devprojectList = [

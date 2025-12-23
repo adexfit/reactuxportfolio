@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./ImageGallery.css";
 import withmarkUsdcard from "../assets/graphic/withmarkUsdcard.gif";
 import usdAccounts from "../assets/graphic/usd accounts.gif";
-import youtube1 from "../assets/graphic/youtube 1.png";
-import youtube2 from "../assets/graphic/youtube 2.png";
-import youtube3 from "../assets/graphic/youtube 3.png";
+// import youtube1 from "../assets/graphic/youtube 1.png";
+// import youtube2 from "../assets/graphic/youtube 2.png";
+// import youtube3 from "../assets/graphic/youtube 3.png";
 import flyer from "../assets/graphic/flyer.jpg";
 import bizcard from "../assets/graphic/bizcard.jpg";
 import bookfinal from "../assets/graphic/bookfinal.jpg";
@@ -41,11 +41,12 @@ export default function Gallery() {
     biz5,
     book3,
     book1,
-    youtube1,
-    youtube2,
-    youtube3,
     bookfinal,
   ];
+
+  //   youtube1,
+  // youtube2,
+  // youtube3,
 
   return (
     <div className="gallery-container">
